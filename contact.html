@@ -33,44 +33,10 @@
       media="screen"
     />
     <!--[if lt IE 9]>
-  <head>
-    <!-- basic -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- mobile metas -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1" />
-    <!-- site metas -->
-    <title>Dizyn</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <!-- style css -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- Responsive-->
-    <link rel="stylesheet" href="css/responsive.css" />
-    <!-- fevicon -->
-    <link rel="icon" href="images/fevicon.png" type="image/gif" />
-    <!-- Scrollbar Custom CSS -->
-    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css" />
-    <!-- Tweaks for older IEs-->
-    <link
-      rel="stylesheet"
-      href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
-      media="screen"
-    />
-    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script
     ><![endif]-->
   </head>
-  <!-- body -->
   <body class="main-layout inner_header contact_page">
     <!-- loader  -->
     <div class="loader_bg">
@@ -79,7 +45,6 @@
     <!-- end loader -->
     <!-- header -->
     <header>
-      <!-- header inner -->
       <div class="header">
         <div class="container">
           <div class="row">
@@ -88,7 +53,7 @@
                 <div class="center-desk">
                   <div class="logo">
                     <a href="index.html"
-                      ><img src="images/logo.png" alt="#"/>
+                      ><img src="images/logo.png" alt="#" />
                     </a>
                   </div>
                 </div>
@@ -107,37 +72,13 @@
                 >
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarsExample04">
-                  <!-- <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                      <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="service.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item d_none">
-                      <a class="nav-link" href="#"
-                        ><i class="fa fa-search" aria-hidden="true"></i
-                      ></a>
-                    </li>
-                  </ul> -->
-                </div>
+                <div class="collapse navbar-collapse" id="navbarsExample04"></div>
               </nav>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <!-- end header inner -->
     <!-- end header -->
 
     <div class="yellow_darkbg">
@@ -152,47 +93,55 @@
       </div>
     </div>
 
-    <!--  contact -->
+    <!-- contact -->
     <div class="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <form id="request" class="main_form">
+            <form id="contactForm" class="main_form">
               <div class="row">
                 <div class="col-md-12">
                   <input
                     class="contactus"
                     placeholder="Name"
-                    type="type"
+                    type="text"
                     name="Name"
+                    id="name"
+                    required
                   />
                 </div>
                 <div class="col-md-12">
                   <input
                     class="contactus"
                     placeholder="Email"
-                    type="type"
+                    type="email"
                     name="Email"
+                    id="email"
+                    required
                   />
                 </div>
                 <div class="col-md-12">
                   <input
                     class="contactus"
                     placeholder="Phone Number"
-                    type="type"
-                    name="Phone Number"
+                    type="text"
+                    name="Phone"
+                    id="phone"
+                    required
                   />
                 </div>
                 <div class="col-md-12">
                   <input
                     class="contactus1"
                     placeholder="Message"
-                    type="type"
-                    Message="Name"
+                    type="text"
+                    name="Message"
+                    id="message"
+                    required
                   />
                 </div>
                 <div class="col-md-12">
-                  <button class="send_btn">Send</button>
+                  <button class="send_btn" type="submit">Send</button>
                 </div>
               </div>
             </form>
@@ -206,7 +155,8 @@
       </div>
     </div>
     <!-- end contact -->
-    <!--  footer -->
+
+    <!-- footer -->
     <footer>
       <div class="footer">
         <div class="container">
@@ -224,30 +174,18 @@
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <h3>Useful Link</h3>
               <ul class="link_menu">
-                <!-- <li><a href="#">About Us</a></li>
-                <li><a href="#">About services</a></li> -->
                 <li><a href="index.html">About Departments</a></li>
-                <!-- <li><a href="#">Services</a></li>
-                <li><a href="#">Contact Us</a></li> -->
               </ul>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <h3>The Services</h3>
               <ul class="link_menu">
-                <!-- <li><a href="#">About Us</a></li>
-                <li><a href="#">About services</a></li>
-                <li><a href="#">About Departments</a></li> -->
                 <li><a href="service.html">Our Services</a></li>
-                <!-- <li><a href="#">Contact Us</a></li> -->
               </ul>
             </div>
             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
               <h3>Contact Us</h3>
               <ul class="link_menu">
-                <!-- <li><a href="#">About Us</a></li>
-                <li><a href="#">About services</a></li>
-                <li><a href="#">About Departments</a></li>
-                <li><a href="#">Services</a></li> -->
                 <li><a href="contact.html">Contact Us</a></li>
               </ul>
             </div>
@@ -256,13 +194,53 @@
       </div>
     </footer>
     <!-- end footer -->
+
     <!-- Javascript files-->
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.0.0.min.js"></script>
-    <!-- sidebar -->
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/custom.js"></script>
+
+    <script>
+      // Add an event listener to handle form submission
+      document.getElementById('contactForm').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the form from refreshing the page
+
+        // Get form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+
+        // Prepare data for sending
+        const formData = {
+          name: name,
+          email: email,
+          phone: phone,
+          message: message
+        };
+
+        // Call the API
+        fetch('https://api.example.com/contact', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+        })
+          .then(response => response.json())
+          .then(data => {
+            alert('Message sent successfully!');
+            // Optionally, clear the form after submission
+            document.getElementById('contactForm').reset();
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error sending the message.');
+          });
+      });
+    </script>
   </body>
 </html>
